@@ -1,16 +1,16 @@
-const ITEMS_CONTAINER = document.getElementByID("items");
-const ITEMS_TEMPLATE = document.getElementByID("itemTemplate");
-const ADD_BUTTON = document.getElementByID("add")
+const ITEMS_CONTAINER = document.getElementById("items");
+const ITEMS_TEMPLATE = document.getElementById("itemTemplate");
+const ADD_BUTTON = document.getElementById("add")
 
-let items = getItems();
+let items = getItem();
 
 function getItems() {
-    const value = localStorage.getItems("todo") ||"[]";
+    const value = localStorage.getItem("todo") ||"[]";
 
    return JSON.parse(value);
 }
 
-function setItems(items) {
+function setItem(items) {
     const itemsJson = JSON.stringify(items);
 
     localStorage.setItem("todo", itemsJson);
