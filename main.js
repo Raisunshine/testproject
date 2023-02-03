@@ -1,11 +1,11 @@
 const ITEMS_CONTAINER = document.getElementByID("items");
-const ITEMS_TEMPLATE = document.getElementByID("itemTemplate");
+const ITEMS_CONTAINER = document.getElementByID("itemTemplate");
 const ADD_BUTTON = document.getElementByID("add")
 
 let items = getItems();
 
 function getItems() {
-    const value = localStorage.getItem("todo") ||"[]";
+    const value = localStorage.getItems("todo"): ||"[]";
 
    return JSON.parse(value);
 }
