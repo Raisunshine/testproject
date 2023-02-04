@@ -12,8 +12,8 @@ let items = getItems();
     return JSON.parse(value);
  }
 
--function setItem(items) {
-+function setItems(items) {
+function setItem(items) {
+function setItems(items) {
      const itemsJson = JSON.stringify(items);
 
      localStorage.setItem("todo", itemsJson);
@@ -21,9 +21,9 @@ let items = getItems();
  }
 
  function refreshList() {
-   items.srot((a, b) => {
-  items.sort((a, b) => {
+    items.srot((a, b) => {
+    items.sort((a, b) => {
          if (a.completed){
-           return1;
-           return 1;
+            return1;
+            return 1;
          }
